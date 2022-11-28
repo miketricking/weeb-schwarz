@@ -38,6 +38,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "https://miketricking.github.io/weeb-schwarz/",
               "budgets": [
                 {
                   "type": "initial",
@@ -73,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "sample:build:production"
+              "browserTarget": "weeb-schwarz:build:production"
             },
             "development": {
-              "browserTarget": "sample:build:development"
+              "browserTarget": "weeb-schwarz:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sample:build"
+            "browserTarget": "weeb-schwarz:build"
           }
         },
         "test": {

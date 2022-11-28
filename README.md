@@ -33,3 +33,6 @@ ng build --prod
 
 ##  Deploy to gh-pages:
 npx angular-cli-ghpages --dir=dist/weeb-schwarz
+
+
+##  When using domain update --base-href in angular.json file.
