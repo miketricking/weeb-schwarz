@@ -1,0 +1,20 @@
+<div style="min-height: 300px;">
+    <h3 *ngIf="set && set.name">{{set.name}}</h3>
+    <div class="container d-flex jc-center">
+        <ng-container *ngIf="set">
+            <div class="pull-rate-info" *ngFor="let product of set.products">
+                <div class="pull-rate-info__content">
+                    <h5 class="pull-rate-info__heading">{{ product.type }}</h5>
+                    <ul class="pull-rate-info__list">
+                        <li *ngFor="let pull of product.pulls; last as last" class="text-center">
+                            <span class="pull-rate-info__rarity">{{pull.rarity}}: </span>{{pull.pullRate}}
+                            <hr *ngIf="!last">
+                        </li>
+                    </ul>
+                    <p class="pull-rate-info__case-info">{{product.productPerCase}} {{product.type}} per case.</p>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
+

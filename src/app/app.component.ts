@@ -17,7 +17,7 @@ export interface set {
 })
 export class AppComponent implements OnInit {
   title = 'weeb-schwarz';
-  
+
   setSelector = new FormControl();
   options!: setPullRateInterface[];
   filteredOptions!: Observable<set[]>;

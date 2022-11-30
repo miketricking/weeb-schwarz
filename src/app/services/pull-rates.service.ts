@@ -4,9 +4,23 @@ import { of } from 'rxjs';
 
 export interface setPullRateInterface {
   name: string;
-  ssp?: number;
-  sp: number;
-  boxesPerCase: number;
+  products: productInterface[];
+}
+
+export interface productInterface {
+  type: productType;
+  productPerCase: number;
+  pulls: pullInterface[];
+}
+
+export interface pullInterface {
+  rarity: string;
+  pullRate: string;
+}
+
+export enum productType {
+  BOOSTERBOXES = 'Booster Boxes',
+  TRIALDECKS = 'Trial Decks',
 }
 
 @Injectable({
@@ -16,28 +30,66 @@ export class PullRatesService {
 
   getPullRates(): Observable<setPullRateInterface[]> {
     const data = [
+
+      {
+        name: 'Pixar (JP)' ,
+        products: [
+          { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'luxo', pullRate: '1 in 24 cases - ish'},
+              {rarity: 'ssp', pullRate: '1'},
+              {rarity: 'sp', pullRate: '4'},
+              {rarity: 'pxr', pullRate: '18'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'sp (td only)', pullRate: '2'},
+              {rarity: 'RRR', pullRate: '6'},
+            ]
+          }
+        ]
+      },
      {
         name: 'Attack On Titan Vol 1' ,
-        sp: 3,
-        boxesPerCase: 16,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 16,
+            pulls: [
+              {rarity: 'sp', pullRate: '3'},
+            ]
+          },
+        ]
       },
       {
         name: 'Attack On Titan Vol 2' ,
-        sp: 3,
-        boxesPerCase: 16,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 16,
+            pulls: [
+              {rarity: 'sp', pullRate: '3'},
+            ]
+          },
+        ]
       },
       {
-        name: 'Attack On Titan Final Season' ,
-        ssp: 1,
-        sp: 2,
-        boxesPerCase: 18,
-      },
-      {
-        name: 'Pixar' ,
-        ssp: 1,
-        sp: 4,
-        pxr: 18,
-        boxesPerCase: 18,
+        name: 'Attack On Titan Final Season',
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'ssp', pullRate: '1'},
+              {rarity: 'sp', pullRate: '2'},
+            ]
+          },
+        ]
       },
     ]
     return of(data);

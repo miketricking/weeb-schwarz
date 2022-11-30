@@ -1,5 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/purple-green.css";
+@import "waves";
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.main-logo {
+    padding-top: 50px;
+}
+
+.main-subheading {
+    margin-top:-15px;
+}
+
+// Reset box-sizing
+* {
+    box-sizing: border-box;
+}
+
+// Utils
+.text-center {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
