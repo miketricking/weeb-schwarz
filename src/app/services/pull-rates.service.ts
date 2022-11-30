@@ -48,7 +48,7 @@ export class PullRatesService {
             type: productType.TRIALDECKS,
             productPerCase: 48,
             pulls: [
-              {rarity: 'sp (td only)', pullRate: '2'},
+              {rarity: 'sp (td only)', pullRate: '3'},
               {rarity: 'RRR', pullRate: '6'},
             ]
           }
