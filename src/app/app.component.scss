@@ -9,7 +9,33 @@
 
 .pull-rate-form {
     width: 50%;
-    max-width: 450px;
+    max-width: 600px;
     margin: auto;
     margin-top: 30px;
+    @media (max-width: 900px) {
+        width:70%;
+    }
+    @media (max-width: 700px) {
+        width:90%;
+    }
+}
+
+.footer {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    transform: translateX(-50%);
+    &__icon {
+        padding: 10px;
+        svg {
+            fill: black;
+            height: 30px;
+            width: 30px;
+            margin-bottom: 6px;
+        }
+    } 
+    &__email {
+        display: block;
+        padding-bottom: 10px;
+    }
 }

@@ -13,12 +13,15 @@
       <form class="pull-rate-form">
         <mat-form-field class="example-full-width" appearance="fill" [style.width.%]="100">
           <mat-label>Search for a set</mat-label>
-          <input type="text" matInput [formControl]="setSelector" [matAutocomplete]="auto">
+          <input type="text" matInput [formControl]="setSelector" [matAutocomplete]="auto"  #inputAutoComplete>
           <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
             <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
               {{option.name}}
             </mat-option>
           </mat-autocomplete>
+          <button *ngIf="setSelector.value" matSuffix mat-icon-button aria-label="Clear" (click)="clearValues($event);">
+            <mat-icon>close</mat-icon>
+          </button>
         </mat-form-field>
       </form>
   
@@ -44,6 +47,14 @@
   </svg>
   </div>
   <!--Waves end-->
+  <div class="footer">
+    <a class="footer__icon" href="https://www.instagram.com/pokemike102/">
+      <mat-icon svgIcon="thumbs-up" aria-hidden="false" aria-label="Instagram Icon"></mat-icon>
+    </a>
+    <a class="footer__email" href="mailto:tcgcollectormike@gmail.com">
+      tcgcollectormike@gmail.com
+    </a>
+  </div>
   
   </div>
   <!--Header ends-->
