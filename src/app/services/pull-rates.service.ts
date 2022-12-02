@@ -30,7 +30,19 @@ export class PullRatesService {
 
   getPullRates(): Observable<setPullRateInterface[]> {
     const data = [
-
+      {
+        name: 'Sword Art Online 10th Anniversary Animation (JP)' ,
+        products: [
+          { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'sec', pullRate: '1 in 3 cases'},
+              {rarity: 'sp', pullRate: '2 (or 3 if no SEC)'},
+            ]
+          },
+        ]
+      },
       {
         name: 'Pixar (JP)' ,
         products: [
@@ -63,7 +75,7 @@ export class PullRatesService {
             pulls: [
               {rarity: 'AVR', pullRate: '1 per 2 cases (replaces a RRR below)'},
               {rarity: 'MR', pullRate: '4'},
-              {rarity: 'RRR', pullRate: '6 or 5'},
+              {rarity: 'RRR', pullRate: '5 (or 6 if no AVR)'},
             ]
           },
           {
@@ -105,7 +117,7 @@ export class PullRatesService {
             productPerCase: 18,
             pulls: [
               {rarity: 'SSP', pullRate: '1'},
-              {rarity: 'OVR', pullRate: '2'},
+              {rarity: 'OFR', pullRate: '2'},
             ]
           },
           {
@@ -113,7 +125,27 @@ export class PullRatesService {
             productPerCase: 48,
             pulls: [
               {rarity: 'SSP (td only)', pullRate: '1'},
-              {rarity: 'OVR (td only)', pullRate: '1'},
+              {rarity: 'OFR (td only)', pullRate: '1'},
+              {rarity: 'RRR (td only)', pullRate: '6'},
+            ]
+          }
+        ]
+      },
+      {
+        name: "Saekano: How to Raise a Boring Girlfriend" ,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'SP', pullRate: '3'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'SP (td only)', pullRate: '1'},
               {rarity: 'RRR (td only)', pullRate: '6'},
             ]
           }
@@ -127,7 +159,7 @@ export class PullRatesService {
             productPerCase: 16,
             pulls: [
               {rarity: 'SEC', pullRate: '1 per 2 cases (replaces a SP below)'},
-              {rarity: 'SP', pullRate: '2 or 1'},
+              {rarity: 'SP', pullRate: '1 (or 2 if no SEC)'},
             ]
           },
           {
@@ -148,7 +180,7 @@ export class PullRatesService {
             productPerCase: 18,
             pulls: [
               {rarity: 'SEC', pullRate: '1 per 2 cases (replaces a SP below)'},
-              {rarity: 'SP', pullRate: '2 or 1'},
+              {rarity: 'SP', pullRate: '1 (or 2 if no SEC)'},
             ]
           },
           {
@@ -171,6 +203,28 @@ export class PullRatesService {
               {rarity: 'ssp', pullRate: '1'},
               {rarity: 'hyr', pullRate: '1'},
               {rarity: 'ofr', pullRate: '2'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'SP (td only)', pullRate: '2'},
+              {rarity: 'RRR (td only)', pullRate: '6'},
+            ]
+          }
+        ]
+      },
+      {
+        name: "The Quintessential Quintuplets" ,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 16,
+            pulls: [
+              {rarity: 'ssp', pullRate: '1 per 2 cases (replaces a SP below)'},
+              {rarity: 'hyr', pullRate: '1'},
+              {rarity: 'sp', pullRate: '2 (or 3 if no SSP)'},
             ]
           },
           {
@@ -295,7 +349,7 @@ export class PullRatesService {
               {rarity: 'ssp', pullRate: '1'},
               {rarity: 'sp', pullRate: '2'},
               {rarity: 'sec', pullRate: '1 per 2 cases (replaces a TTR below)'},
-              {rarity: 'ttr', pullRate: '3 or 2'},
+              {rarity: 'ttr', pullRate: '2 (or 3 if no SEC)'},
             ]
           },
           {
