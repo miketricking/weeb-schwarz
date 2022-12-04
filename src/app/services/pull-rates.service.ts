@@ -73,7 +73,7 @@ export class PullRatesService {
             type: productType.BOOSTERBOXES,
             productPerCase: 18,
             pulls: [
-              {rarity: 'AVR', pullRate: '1 per 2 cases (replaces a RRR below)'},
+              {rarity: 'AVR', pullRate: '1 per 3 cases (replaces a RRR)'},
               {rarity: 'MR', pullRate: '4'},
               {rarity: 'RRR', pullRate: '6 (or 5 if case contains a AVR)'},
             ]
@@ -404,7 +404,7 @@ export class PullRatesService {
             productPerCase: 16,
             pulls: [
               {rarity: 'sec', pullRate: '1 per 2 cases (replaces a SP below)'},
-              {rarity: 'sp', pullRate: '2 (or 1 if case contains a SEC'},
+              {rarity: 'sp', pullRate: '2 (or 1 if case contains a SEC)'},
               {rarity: 'RBR', pullRate: '2'},
             ]
           },
