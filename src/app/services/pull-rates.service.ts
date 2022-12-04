@@ -38,7 +38,7 @@ export class PullRatesService {
             productPerCase: 18,
             pulls: [
               {rarity: 'sec', pullRate: '1 in 3 cases'},
-              {rarity: 'sp', pullRate: '2 (or 3 if no SEC)'},
+              {rarity: 'sp', pullRate: '3 (or 2 if case contains a SEC)'},
             ]
           },
         ]
@@ -61,7 +61,7 @@ export class PullRatesService {
             productPerCase: 48,
             pulls: [
               {rarity: 'sp (td only)', pullRate: '2'},
-              {rarity: 'RRR (td only)', pullRate: '6'},
+              {rarity: 'RRR (td only)', pullRate: '8'},
             ]
           }
         ]
@@ -75,7 +75,7 @@ export class PullRatesService {
             pulls: [
               {rarity: 'AVR', pullRate: '1 per 2 cases (replaces a RRR below)'},
               {rarity: 'MR', pullRate: '4'},
-              {rarity: 'RRR', pullRate: '5 (or 6 if no AVR)'},
+              {rarity: 'RRR', pullRate: '6 (or 5 if case contains a AVR)'},
             ]
           },
           {
@@ -125,8 +125,8 @@ export class PullRatesService {
             productPerCase: 48,
             pulls: [
               {rarity: 'SSP (td only)', pullRate: '1'},
-              {rarity: 'OFR (td only)', pullRate: '1'},
-              {rarity: 'RRR (td only)', pullRate: '6'},
+              {rarity: 'OFR (td only)', pullRate: '2'},
+              {rarity: 'RRR (td only)', pullRate: '45'},
             ]
           }
         ]
@@ -159,7 +159,7 @@ export class PullRatesService {
             productPerCase: 16,
             pulls: [
               {rarity: 'SEC', pullRate: '1 per 2 cases (replaces a SP below)'},
-              {rarity: 'SP', pullRate: '1 (or 2 if no SEC)'},
+              {rarity: 'SP', pullRate: '2 (or 1 if case contains a SEC)'},
             ]
           },
           {
@@ -180,17 +180,9 @@ export class PullRatesService {
             productPerCase: 18,
             pulls: [
               {rarity: 'SEC', pullRate: '1 per 2 cases (replaces a SP below)'},
-              {rarity: 'SP', pullRate: '1 (or 2 if no SEC)'},
+              {rarity: 'SP', pullRate: '2 (or 1 if case contains a SEC)'},
             ]
           },
-          {
-            type: productType.TRIALDECKS,
-            productPerCase: 48,
-            pulls: [
-              {rarity: 'SP (td only)', pullRate: '1'},
-              {rarity: 'RRR (td only)', pullRate: '6'},
-            ]
-          }
         ]
       },
       {
@@ -224,7 +216,7 @@ export class PullRatesService {
             pulls: [
               {rarity: 'ssp', pullRate: '1 per 2 cases (replaces a SP below)'},
               {rarity: 'hyr', pullRate: '1'},
-              {rarity: 'sp', pullRate: '2 (or 3 if no SSP)'},
+              {rarity: 'sp', pullRate: '3 (or 2 if case contains a SSP)'},
             ]
           },
           {
@@ -253,6 +245,89 @@ export class PullRatesService {
             productPerCase: 48,
             pulls: [
               {rarity: 'SP (td only)', pullRate: '2'},
+              {rarity: 'RRR (td only)', pullRate: '8'},
+            ]
+          }
+        ]
+      },
+      {
+        name: "Rent A Girlfriend" ,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'SSP', pullRate: '1'},
+              {rarity: 'SP', pullRate: '2'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'SP (td only)', pullRate: '2'},
+              {rarity: 'RRR (td only)', pullRate: '8'},
+            ]
+          }
+        ]
+      },
+      {
+        name: "Danmachi - is it wrong to pick up girls in a dungeon" ,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'SSP', pullRate: '3'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'SP (td only)', pullRate: '2'},
+              {rarity: 'RRR (td only)', pullRate: '8'},
+            ]
+          }
+        ]
+      },
+      {
+        name: "Sneaker Bunko (JP)" ,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'SP', pullRate: '2'},
+              {rarity: 'SBR', pullRate: '2'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'SP (td only)', pullRate: '2'},
+              {rarity: 'RRR (td only)', pullRate: '6'},
+            ]
+          }
+        ]
+      },
+      {
+        name: "Fujimi Fantasia Bunko" ,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'SP', pullRate: '2'},
+              {rarity: 'FBR', pullRate: '2'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'SP (td only)', pullRate: '2'},
               {rarity: 'RRR (td only)', pullRate: '6'},
             ]
           }
@@ -274,6 +349,70 @@ export class PullRatesService {
             productPerCase: 48,
             pulls: [
               {rarity: 'sp (td only)', pullRate: '2'},
+              {rarity: 'RRR (td only)', pullRate: '8'},
+            ]
+          }
+        ]
+      },
+      {
+        name: 'Fate/Grand Order Absolute Demonic Front Babylonia' ,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 16,
+            pulls: [
+              {rarity: 'sec', pullRate: '1 per 2 cases (replaces a SP below)'},
+              {rarity: 'sp', pullRate: '3 (or 2 if case contains a SEC'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'sp (td only)', pullRate: '2'},
+              {rarity: 'RRR (td only)', pullRate: '6'},
+            ]
+          }
+        ]
+      },
+      {
+        name: 'Fate/Stay night [Heaven’s Feel] Vol.2' ,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 16,
+            pulls: [
+              {rarity: 'sec', pullRate: '1 per 2 cases (replaces a SP below)'},
+              {rarity: 'sp', pullRate: '3 (or 2 if case contains a SEC'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'sp (td only)', pullRate: '2'},
+              {rarity: 'RRR (td only)', pullRate: '6'},
+            ]
+          }
+        ]
+      },
+      {
+        name: 'RWBY' ,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 16,
+            pulls: [
+              {rarity: 'sec', pullRate: '1 per 2 cases (replaces a SP below)'},
+              {rarity: 'sp', pullRate: '2 (or 1 if case contains a SEC'},
+              {rarity: 'RBR', pullRate: '2'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'sp (td only)', pullRate: '2'},
               {rarity: 'RRR (td only)', pullRate: '6'},
             ]
           }
@@ -287,6 +426,27 @@ export class PullRatesService {
             productPerCase: 16,
             pulls: [
               {rarity: 'sp', pullRate: '2'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'sp (td only)', pullRate: '2'},
+              {rarity: 'RRR (td only)', pullRate: '6'},
+            ]
+          }
+        ]
+      },
+      {
+        name: 'Bofuri: I Don’t Want to Get Hurt, so I’ll Max Out My Defense' ,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 16,
+            pulls: [
+              {rarity: 'sec', pullRate: '1 per 2 cases (replaces a SP below)'},    
+              {rarity: 'sp', pullRate: '4 (or 3 if case contains a SEC)'},
             ]
           },
           {
@@ -349,7 +509,7 @@ export class PullRatesService {
               {rarity: 'ssp', pullRate: '1'},
               {rarity: 'sp', pullRate: '2'},
               {rarity: 'sec', pullRate: '1 per 2 cases (replaces a TTR below)'},
-              {rarity: 'ttr', pullRate: '2 (or 3 if no SEC)'},
+              {rarity: 'ttr', pullRate: '3 (or 2 if case contains a SEC)'},
             ]
           },
           {
@@ -357,7 +517,7 @@ export class PullRatesService {
             productPerCase: 48,
             pulls: [
               {rarity: 'sp (td only)', pullRate: '2'},
-              {rarity: 'RRR (td only)', pullRate: '6'},
+              {rarity: 'RRR (td only)', pullRate: '8'},
             ]
           }
         ]
