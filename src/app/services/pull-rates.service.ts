@@ -19,8 +19,8 @@ export interface pullInterface {
 }
 
 export enum productType {
-  BOOSTERBOXES = 'Booster Boxes',
-  TRIALDECKS = 'Trial Decks',
+  BOOSTERBOXES = 'Booster Box Case',
+  TRIALDECKS = 'Trial Deck Case',
 }
 
 @Injectable({
@@ -132,7 +132,7 @@ export class PullRatesService {
         ]
       },
       {
-        name: "Saekano: How to Raise a Boring Girlfriend" ,
+        name: "Saekano: How to Raise a Boring Girlfriend (JP)" ,
         products: [
            { 
             type: productType.BOOSTERBOXES,
@@ -507,7 +507,6 @@ export class PullRatesService {
             productPerCase: 18,
             pulls: [
               {rarity: 'ssp', pullRate: '1'},
-              {rarity: 'sp', pullRate: '2'},
               {rarity: 'sec', pullRate: '1 per 2 cases (replaces a TTR below)'},
               {rarity: 'ttr', pullRate: '3 (or 2 if case contains a SEC)'},
             ]
