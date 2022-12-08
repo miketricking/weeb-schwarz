@@ -117,7 +117,7 @@ export class PullRatesService {
             productPerCase: 18,
             pulls: [
               {rarity: 'SSP', pullRate: '1'},
-              {rarity: 'OFR', pullRate: '2'},
+              {rarity: 'OFR', pullRate: '3'},
             ]
           },
           {
