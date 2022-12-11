@@ -31,6 +31,20 @@ export class PullRatesService {
   getPullRates(): Observable<setPullRateInterface[]> {
     const data = [
       {
+        name: 'Key all-star (JP)' ,
+        products: [
+          { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'sec', pullRate: '1 in 3 cases'},
+              {rarity: 'KSC', pullRate: '1 (or 0 if case contains a SEC)'},
+              {rarity: 'sp', pullRate: '2'},
+            ]
+          },
+        ]
+      },
+      {
         name: 'Sword Art Online 10th Anniversary Animation (JP)' ,
         products: [
           { 
