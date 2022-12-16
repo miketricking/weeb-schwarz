@@ -36,7 +36,7 @@ export class PullRatesService {
           { 
             type: productType.BOOSTERBOXES,
             productPerCase: 18,
-            pulls: [,
+            pulls: [
               {rarity: 'sp', pullRate: '2'},
               {rarity: 'dsr', pullRate: '3'},
             ]
@@ -159,7 +159,7 @@ export class PullRatesService {
         ]
       },
       {
-        name: "Saekano: How to Raise a Boring Girlfriend (JP)" ,
+        name: "Saekano: How to Raise a Boring Girlfriend" ,
         products: [
            { 
             type: productType.BOOSTERBOXES,
@@ -172,7 +172,7 @@ export class PullRatesService {
             type: productType.TRIALDECKS,
             productPerCase: 48,
             pulls: [
-              {rarity: 'SP (td only)', pullRate: '1'},
+              {rarity: 'SP (td only)', pullRate: '2'},
               {rarity: 'RRR (td only)', pullRate: '6'},
             ]
           }
@@ -516,14 +516,6 @@ export class PullRatesService {
               {rarity: 'sp', pullRate: '3'},
             ]
           },
-          {
-            type: productType.TRIALDECKS,
-            productPerCase: 48,
-            pulls: [
-              {rarity: 'sp (td only)', pullRate: '2'},
-              {rarity: 'RRR (td only)', pullRate: '6'},
-            ]
-          }
         ]
       },
       {
