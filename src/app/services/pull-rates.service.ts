@@ -31,6 +31,27 @@ export class PullRatesService {
   getPullRates(): Observable<setPullRateInterface[]> {
     const data = [
       {
+        name: 'Azur Lane (JP)' ,
+        products: [
+          { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'sec', pullRate: '1 in 3 cases'},
+              {rarity: 'sp', pullRate: '4 (or 3 if case contains a SEC)'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'SP (td only)', pullRate: '2'},
+              {rarity: 'RRR (td only)', pullRate: '46'},
+            ]
+          }
+        ]
+      },
+      {
         name: 'The Seven Deadly Sins: Revival of The Commandments' ,
         products: [
           { 
