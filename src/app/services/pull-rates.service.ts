@@ -31,6 +31,19 @@ export class PullRatesService {
   getPullRates(): Observable<setPullRateInterface[]> {
     const data = [
       {
+        name: 'That Time I Got Reincarnated As A Slime Vol 3 (JP)' ,
+        products: [
+          { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'sec', pullRate: '1 in 3 cases'},
+              {rarity: 'sp', pullRate: '3 (or 2 if case contains a SEC)'},
+            ]
+          }
+        ]
+      },
+      {
         name: 'Azur Lane (JP)' ,
         products: [
           { 
