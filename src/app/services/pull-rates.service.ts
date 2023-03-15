@@ -30,6 +30,30 @@ export class PullRatesService {
 
   getPullRates(): Observable<setPullRateInterface[]> {
     const data = [
+        {
+        name: 'Marvel Premium (JP)' ,
+        products: [
+          { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 30,
+            pulls: [
+              {rarity: 'sp', pullRate: '4 per case'},
+            ]
+          }
+        ]
+      },
+      {
+        name: 'Star Wars Premium (JP)' ,
+        products: [
+          { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 30,
+            pulls: [
+              {rarity: 'sp', pullRate: '4 per case'},
+            ]
+          }
+        ]
+      },
       {
         name: 'That Time I Got Reincarnated As A Slime Vol 3 (JP)' ,
         products: [
