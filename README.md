@@ -28,8 +28,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-##  Run build for gh-pages:
+
+##  Run build for gh-pages: (might need to run 'npx nx clear-cache' first otherwise it does not build out the new changes)
 ng build --prod
 
-##  Deploy to gh-pages:
+
+##  Deploy to gh-pages: (This should trigger a commit to the gh-pages branch: https://github.com/miketricking/weeb-schwarz/commits/gh-pages and then fire off a deployment action https://github.com/miketricking/weeb-schwarz/actions. I've had times where it does not work, the only way I could get it working was to remove the --dir from it which takes the site down and then run again with it back on the end)
 npx angular-cli-ghpages --dir=dist/weeb-schwarz

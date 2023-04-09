@@ -30,6 +30,21 @@ export class PullRatesService {
 
   getPullRates(): Observable<setPullRateInterface[]> {
     const data = [
+      {
+        name: 'Dinsey 100 (JP)' ,
+        products: [
+          { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'OR', pullRate: '1 per 40 cases - ish'},
+              {rarity: 'ssp', pullRate: '1'},
+              {rarity: 'sp', pullRate: '3'},
+              {rarity: 'hnd', pullRate: '18'},
+            ]
+          }
+        ]
+      },
         {
         name: 'Marvel Premium (JP)' ,
         products: [
@@ -37,7 +52,7 @@ export class PullRatesService {
             type: productType.BOOSTERBOXES,
             productPerCase: 30,
             pulls: [
-              {rarity: 'sp', pullRate: '4 per case'},
+              {rarity: 'sp', pullRate: '4'},
             ]
           }
         ]
@@ -49,7 +64,7 @@ export class PullRatesService {
             type: productType.BOOSTERBOXES,
             productPerCase: 30,
             pulls: [
-              {rarity: 'sp', pullRate: '4 per case'},
+              {rarity: 'sp', pullRate: '4 '},
             ]
           }
         ]
