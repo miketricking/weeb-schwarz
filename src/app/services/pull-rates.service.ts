@@ -31,16 +31,16 @@ export class PullRatesService {
   getPullRates(): Observable<setPullRateInterface[]> {
     const data = [
       {
-        name: 'Dinsey 100 (JP)' ,
+        name: 'Disney 100 (JP)' ,
         products: [
           { 
             type: productType.BOOSTERBOXES,
             productPerCase: 18,
             pulls: [
-              {rarity: 'OR', pullRate: '1 per 40 cases - ish'},
+              {rarity: 'OR', pullRate: '1 per 20 cases - ish'},
               {rarity: 'ssp', pullRate: '1'},
               {rarity: 'sp', pullRate: '3'},
-              {rarity: 'hnd', pullRate: '18'},
+              {rarity: 'hnd', pullRate: '16'},
             ]
           }
         ]
