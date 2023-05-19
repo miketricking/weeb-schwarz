@@ -31,6 +31,26 @@ export class PullRatesService {
   getPullRates(): Observable<setPullRateInterface[]> {
     const data = [
       {
+        name: "Chainsaw Man (jp)" ,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'SSP (td only)', pullRate: '1'},
+              {rarity: 'OFR (td only)', pullRate: '2'},
+              {rarity: 'RRR (td only)', pullRate: '45'},
+            ]
+          }
+        ]
+      },
+      {
         name: 'Disney 100 (JP)' ,
         products: [
           { 
