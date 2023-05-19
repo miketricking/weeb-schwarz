@@ -31,7 +31,7 @@ export class PullRatesService {
   getPullRates(): Observable<setPullRateInterface[]> {
     const data = [
       {
-        name: "Chainsaw Man (jp)" ,
+        name: "Chainsaw Man (JP)" ,
         products: [
            { 
             type: productType.BOOSTERBOXES,
