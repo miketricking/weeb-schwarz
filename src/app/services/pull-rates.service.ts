@@ -31,6 +31,26 @@ export class PullRatesService {
   getPullRates(): Observable<setPullRateInterface[]> {
     const data = [
       {
+        name: "Lycoris Recoil (JP)" ,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'ssp', pullRate: '1'},
+              {rarity: 'ofr', pullRate: '2'},
+              {rarity: 'lrr', pullRate: '2'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+            ]
+          }
+        ]
+      },
+      {
         name: "Chainsaw Man (JP)" ,
         products: [
            { 
