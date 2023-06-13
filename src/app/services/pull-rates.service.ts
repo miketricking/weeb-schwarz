@@ -19,8 +19,8 @@ export interface pullInterface {
 }
 
 export enum productType {
-  BOOSTERBOXES = 'Booster Box Case',
-  TRIALDECKS = 'Trial Deck Case',
+  BOOSTERBOXES = 'Booster Boxes',
+  TRIALDECKS = 'Trial Decks',
 }
 
 @Injectable({
