@@ -4,14 +4,14 @@
         <ng-container *ngIf="set">
             <div class="pull-rate-info" *ngFor="let product of set.products">
                 <div class="pull-rate-info__content">
-                    <h5 class="pull-rate-info__heading">{{ product.type }}</h5>
+                    <h5 class="pull-rate-info__heading">{{ product.type }} Case</h5>
                     <ul class="pull-rate-info__list">
                         <li *ngFor="let pull of product.pulls; last as last" class="text-center">
                             <span class="pull-rate-info__rarity">{{pull.rarity}}: </span>{{pull.pullRate}}
                             <hr *ngIf="!last">
                         </li>
                     </ul>
-                    <p class="pull-rate-info__case-info">{{product.productPerCase}} {{product.type}} per case.</p>
+                    <p class="pull-rate-info__case-info">{{product.productPerCase}} {{product.type}}{{product.type === 'Booster Box' ? 'es' : 's'}} per case.</p>
                 </div>
             </div>
         </ng-container>
