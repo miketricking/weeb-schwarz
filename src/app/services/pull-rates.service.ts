@@ -57,6 +57,9 @@ export class PullRatesService {
             type: productType.BOOSTERBOXES,
             productPerCase: 18,
             pulls: [
+              {rarity: 'CSMR', pullRate: 'Seems 1 per 12-15 cases'},
+              {rarity: 'SS', pullRate: '3'},
+              {rarity: 'OFR', pullRate: '4'},
             ]
           },
           {
