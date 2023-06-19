@@ -31,6 +31,28 @@ export class PullRatesService {
   getPullRates(): Observable<setPullRateInterface[]> {
     const data = [
       {
+        name: "Avatar The Last Airbender (EN)" ,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'SEC', pullRate: 'Seems 1 per 3 cases - will replace an SP below'},
+              {rarity: 'SP', pullRate: '3'},
+              {rarity: 'ATR', pullRate: '3'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'SP (td only)', pullRate: '2'},
+              {rarity: 'RRR (td only)', pullRate: '???'},
+            ]
+          }
+        ]
+      },
+      {
         name: "Lycoris Recoil (JP)" ,
         products: [
            { 
@@ -57,8 +79,8 @@ export class PullRatesService {
             type: productType.BOOSTERBOXES,
             productPerCase: 18,
             pulls: [
-              {rarity: 'CSMR', pullRate: 'Seems 1 per 12-15 cases'},
-              {rarity: 'SS', pullRate: '3'},
+              {rarity: 'CSMR', pullRate: 'Seems 1 per 12-15 cases - will replace an SP below'},
+              {rarity: 'SP', pullRate: '3'},
               {rarity: 'OFR', pullRate: '4'},
             ]
           },
