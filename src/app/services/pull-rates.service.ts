@@ -31,6 +31,19 @@ export class PullRatesService {
   getPullRates(): Observable<setPullRateInterface[]> {
     const data = [
       {
+        name: "Hololive Production Vol 2" ,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'SSP', pullRate: '1'},
+              {rarity: 'SP', pullRate: '4'},
+            ]
+          },
+        ]
+      },
+      {
         name: "Avatar The Last Airbender (EN)" ,
         products: [
            { 
