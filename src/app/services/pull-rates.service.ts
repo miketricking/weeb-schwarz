@@ -31,6 +31,24 @@ export class PullRatesService {
   getPullRates(): Observable<setPullRateInterface[]> {
     const data = [
       {
+        name: "Dengeki Bunko (JP)" ,
+        products: [
+           { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'SP', pullRate: '3'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+            ]
+          }
+        ]
+      },
+      {
         name: "Hololive Production Vol 2" ,
         products: [
            { 
