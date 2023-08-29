@@ -49,7 +49,7 @@ export class PullRatesService {
         ]
       },
       {
-        name: "Hololive Production Vol 2" ,
+        name: "Hololive Production Vol 2 (EN)" ,
         products: [
            { 
             type: productType.BOOSTERBOXES,
@@ -59,6 +59,19 @@ export class PullRatesService {
               {rarity: 'SP', pullRate: '4'},
             ]
           },
+        ]
+      },
+      {
+        name: 'That Time I Got Reincarnated As A Slime Vol 3 (EN)' ,
+        products: [
+          { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'sec', pullRate: '1 in 2 cases'},
+              {rarity: 'sp', pullRate: '3 (or 2 if case contains a SEC)'},
+            ]
+          }
         ]
       },
       {
