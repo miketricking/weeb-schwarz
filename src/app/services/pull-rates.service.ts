@@ -75,6 +75,20 @@ export class PullRatesService {
         ]
       },
       {
+        name: 'Spy x Family (JP)' ,
+        products: [
+          { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'sec', pullRate: '1 in 3 cases'},
+              {rarity: 'sp', pullRate: '2'},
+              {rarity: 'SPYR', pullRate: '6 (or 5 if case contains a SEC)'},
+            ]
+          }
+        ]
+      },
+      {
         name: "Avatar The Last Airbender (EN)" ,
         products: [
            { 
