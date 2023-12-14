@@ -31,6 +31,49 @@ export class PullRatesService {
   getPullRates(): Observable<setPullRateInterface[]> {
     const data = [
       {
+        name: "Oshi No Ko (JP)" ,
+        products: [
+          { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'SSP', pullRate: '1'},
+              {rarity: 'SP', pullRate: '2'},
+              {rarity: 'OFR', pullRate: '4'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'SP (td only)', pullRate: '2?'},
+              {rarity: 'OFR (td only)', pullRate: '??'},
+            ]
+          }
+        ]
+      },
+      {
+        name: "Azur Lane (EN)" ,
+        products: [
+          { 
+            type: productType.BOOSTERBOXES,
+            productPerCase: 18,
+            pulls: [
+              {rarity: 'sec', pullRate: '1 in 3 cases (ish)'},
+              {rarity: 'sp', pullRate: '4 (or 3 if case contains a SEC)'},
+            ]
+          },
+          {
+            type: productType.TRIALDECKS,
+            productPerCase: 48,
+            pulls: [
+              {rarity: 'SP (td only)', pullRate: '2'},
+              {rarity: 'RRR (td only)', pullRate: '46'},
+            ]
+          }
+        ]
+      },
+      {
         name: "Dengeki Bunko (JP)" ,
         products: [
            { 
